@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <div class="header_content">Current loans</div>
+    <div class="line"></div>
+  </div>
+  <div>
+    <div class="content_items">
+    </div>
+    <div class="avaliable">
+      <div class="loans_av">Total amount avaliable for investment </div>
+      <!-- <div class="loans_av_sum">$</div> -->
+    </div>
+  </div>
+  <div class="popup_bg">
+    <form class="popup">
+      <img src="xmark-solid.svg" class="close_popup">
+      <div class="popup_title">
+        <div class="popup_items">Invest in loan</div>
+        <div class="popup_item">Loan title you've clicked</div>
+        <div class="popup_av">Amount avaliable:</div>
+        <div class="popup_loan_end">Loan ends in:</div>
+        <div class="popup_inv_amount">Investment amount</div>
+        <input type="number" class="loan_sum" min="0">
+        <button type="submit">invest</button>
+      </div>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
