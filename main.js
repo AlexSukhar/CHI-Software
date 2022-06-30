@@ -34,17 +34,12 @@ async function getResponse() {
   let popup = document.querySelector('.popup');
   let openPopupButtons = document.querySelectorAll('.open_popup');
 
-  openPopupButtons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      console.log(e.target.id)
-      loan = getLoanById(e.target.id)
-      e.preventDefault();
-      document.getElementById("title").innerHTML = loan.title
-      document.getElementById("amount").innerHTML = `Amount avaliable: ${loan.available}`
+  for (let i = 0; i < openPopupButtons.length; i++) {
+    openPopupButtons[i].addEventListener('click', function () {
       popupBg.classList.add('active');
       popup.classList.add('active');
-    })
-  });
+    });
+  }
 
   let closePopupButton = document.querySelector('.close_popup');
   closePopupButton.addEventListener('click', () => {
@@ -85,9 +80,4 @@ async function getResponse() {
 
 }
 
-
-getResponse()
-
-
-
-
+getResponse();
