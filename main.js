@@ -17,7 +17,6 @@ async function getResponse() {
       <div class="borrower">
         <div class="borrower_name">${content[key].id}</div>
         <div class="borrower_details">${content[key].title}</div>
-        <div class="borrower_available"> Available ${content[key].available}</div>
         <div class="to_invest">
         <a href="#" id=${content[key].id} class="invest_btn open_popup">invest</a>
       </div>
@@ -46,6 +45,7 @@ async function getResponse() {
     popupBg.classList.remove('active');
     popup.classList.remove('active');
   });
+
 
 
   //GET VALUE FROM FORM
